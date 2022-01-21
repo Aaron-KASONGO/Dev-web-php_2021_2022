@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    <form action="" method="get">
+    <form action="controller/controller.php" method="POST">
         <div>
             Nom: 
-            <input type="text" name="name">
+            <input type="text" name="firstname">
         </div>
         <br>
         <div>
             PostNom: 
-            <input type="text" name="second_name">
+            <input type="text" name="lastname">
         </div>
         <br>
         <div>
             Prenom: 
-            <input type="text" name="prenom">
+            <input type="text" name="name">
         </div>
         <br>
         <div>
@@ -30,11 +30,13 @@
             <input type="text" name="mat">
         </div>
         <br>
-        Genre: 
-        <select name="genre" id="genre">
-            <option value="M">Masculin</option>
-            <option value="F">Feminin</option>
-        </select>
+        <div>
+            Genre: 
+            <select name="genre" id="gender">
+                <option value="M">Masculin</option>
+                <option value="F">Feminin</option>
+            </select>
+        </div>
         <br>
         <div>
             Promotion: 
